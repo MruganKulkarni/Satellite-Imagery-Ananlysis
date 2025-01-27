@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster and Pollution Detection Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Disaster and Pollution Detection Model</h1>
+    </header>
+    <main>
+        <div class="input-section">
+            <h2>Enter Locations for Pollution Detection</h2>
+            <input type="text" id="pollutionLocation1" placeholder="Pollution Location 1 (Lat, Long)">
+            <input type="text" id="pollutionLocation2" placeholder="Pollution Location 2 (Lat, Long)">
+            <input type="text" id="pollutionLocation3" placeholder="Pollution Location 3 (Lat, Long)">
+            <h2>Enter Locations for Disaster Prediction</h2>
+            <input type="text" id="disasterLocation1" placeholder="Disaster Location 1 (Lat, Long)">
+            <input type="text" id="disasterLocation2" placeholder="Disaster Location 2 (Lat, Long)">
+            <input type="text" id="disasterLocation3" placeholder="Disaster Location 3 (Lat, Long)">
+            <button onclick="submitLocations()">Submit</button>
+        </div>
+
+        <div class="maps-section">
+            <h2>Pollution Maps</h2>
+            <div class="map" id="pollutionCurrentMap">Current Pollution Map</div>
+            <div class="map" id="pollutionFutureMap">Future Pollution Prediction Map</div>
+            <div class="text-output" id="pollutionOutput">Pollution Prediction Output</div>
+            <div class="graph" id="pollutionGraph">Pollution Prediction Graph</div>
+        </div>
+
+        <div class="maps-section">
+            <h2>Disaster Maps</h2>
+            <div class="map" id="disasterCurrentMap">Current Disaster Map</div>
+            <div class="map" id="disasterFutureMap">Future Disaster Prediction Map</div>
+            <div class="text-output" id="disasterOutput">Disaster Prediction Output</div>
+        </div>
+
+        <div class="maps-section">
+            <h2>Satellite Data Maps</h2>
+            <div class="map" id="sentinelMap">Sentinel-1 Data Map</div>
+            <div class="map" id="landCoverMap">Land Cover Data Map</div>
+            <div class="map" id="ndviMap">NDVI Data Map</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
